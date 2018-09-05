@@ -61,7 +61,7 @@ public class HHJActionSheet: UIView {
             
             let labelView = UIView(frame: CGRect(x: 0, y: subViewHeight, width: screenWidth, height: max(actionSheet.kTitleLabelMinHeight,titleLabel.bounds.size.height + 40)))
             labelView.backgroundColor = UIColor.white
-            titleLabel.frame = CGRect(x: titleLabel.frame.origin.x, y: titleLabel.frame.origin.y, width: titleLabel.bounds.size.width, height: labelView.bounds.size.height)
+            titleLabel.frame = CGRect(x: kTitleLabelHorGap, y: titleLabel.frame.origin.y, width: screenWidth-kTitleLabelHorGap*2, height: labelView.bounds.size.height)
             
             actionSheet.titleView.addSubview(labelView)
             labelView.addSubview(titleLabel)
