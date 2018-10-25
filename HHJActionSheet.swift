@@ -133,7 +133,7 @@ public class HHJActionSheet: UIView {
     // MARK: --------UIView
     class func addBottomLineIn(_ view: UIView) {
         let lineViewHeight = 1/UIScreen.main.scale
-        let lineView = UIView(frame: CGRect(x: 0, y: view.frame.maxY-lineViewHeight, width: view.bounds.size.width, height: lineViewHeight))
+        let lineView = UIView(frame: CGRect(x: 0, y: view.bounds.maxY-lineViewHeight, width: view.bounds.size.width, height: lineViewHeight))
         lineView.backgroundColor = UIColor(white: 217/255, alpha: 1)
         view.addSubview(lineView)
     }
